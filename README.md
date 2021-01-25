@@ -1,18 +1,18 @@
 # Steps to install my project on localhost : 
-    	• Install DDEV
-	• Create a new directory
-	• Go to this directory and execute this commande : `ddev config --project-type=drupal9 --docroot=web –create-docroot`
-    	• modify the route ports in the file that is in the project directory: `.ddev/config.yaml` :
-        		◦ router_http_port: from "80" to "8880" for example
-        		◦ router_https_port: from "443" to "9443" for example
-    	• execute these commands :
-		```
-		ddev start
-		ddev composer create "drupal/recommended-project"` ("yes" to clear the directory)
-		ddev composer require drush/drush`
-		ddev import-db –src={the/dump/path}/db.sql.gz
-		```
-    	• For the last step beofre launching the project, copy all the files from my project folder into your directory and execute this command : `ddev launch`
+• Install DDEV
+• Create a new directory
+• Go to this directory and execute this commande : `ddev config --project-type=drupal9 --docroot=web –create-docroot`
+• modify the route ports in the file that is in the project directory: `.ddev/config.yaml` :
+    ◦ router_http_port: from "80" to "8880" for example
+    ◦ router_https_port: from "443" to "9443" for example
+• execute these commands :
+```
+ddev start
+ddev composer create "drupal/recommended-project"` ("yes" to clear the directory)
+ddev composer require drush/drush`
+ddev import-db –src={the/dump/path}/db.sql.gz
+```
+• For the last step beofre launching the project, copy all the files from my project folder into your directory and execute this command : `ddev launch`
 
 # Technical questions : 
 	1. How long did you spend on the coding test? I spend around 2 days, average of 6/7 hours per day,it's about 12/14 hours.
